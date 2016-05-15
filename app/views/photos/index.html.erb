@@ -1,0 +1,30 @@
+
+		<div id="top1" >
+    <a id="for-sale" href="#">FOR SALE <span>&#9660</span></a>
+		<a id = "post-ad" href="#">POST AN AD</a>
+		<a id = "my-account" href="#">MY ACCOUNT</a>
+		</div>
+		<div id = "top-photo">
+		<input type="text" style="background-color:transparent; width: 58%; border-width: 0px 0px 1px; border-style: none none solid; padding-bottom: 12px; font-size: 20px; color: rgb(188, 199, 207); padding-left: 0px; border-color: -moz-use-text-color -moz-use-text-color rgb(204, 204, 204);"/>
+		<span style="font-size: 20px; color: rgb(188, 199, 207); padding: 0px 20px;">in</span>
+		<a href="#" style="width:34%;font-size:20px;color:rgb(188, 199, 207);display:inline-block;text-decoration:none;padding-bottom:12px;border-bottom:1px solid rgb(204, 204, 204);">Europe
+			<span style="position:relative;right:-75%;">&#9660</span>
+		</a>
+			<!--<select style="width: 30%; font-size: 20px; color: rgb(188, 199, 207); padding-bottom: 12px; border-width: 0px 0px 1px; border-style: none none solid; border-color: -moz-use-text-color -moz-use-text-color rgb(204, 204, 204);"><option>Europe</option></select>-->
+		</div>
+    <div id = "image-container">
+      
+
+      <% @photos.each do |photo| %>
+        <div class="box1" style="height:200px;">
+          <img class="card_image" style="height:200px;" src = '<%=photo.address%>'>
+          <p class="money">$<%=photo.price%>B</p>
+          <br>
+        </div>
+        <div class="box2" style="height:70px;">
+          <p class="title"><%= photo.description %></p>
+          <button>Like it!</button>
+          <button disabled><%= photo.likes %></button>
+        </div>
+      <% end %>
+    </div>

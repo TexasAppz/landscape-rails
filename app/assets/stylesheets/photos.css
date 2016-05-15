@@ -1,0 +1,73 @@
+
+#top1 {
+  width:74%;
+  margin:0px auto;
+}
+#for-sale {
+  width:30%;
+  font-size:15px;
+  color:rgb(188, 199, 207);
+  display:inline-block;
+  text-decoration:none;padding:12px;
+}
+
+#post-ad {
+  display:inline-block;
+  float:right;
+  padding:12px;
+  background-color:rgb(49, 166, 224);
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  border-radius:5px;
+  font-size:15px;
+}
+#my-account {
+  display:inline-block;
+  float:right;
+  padding:12px;
+  text-decoration:none;
+  color:rgb(188, 199, 207);
+  font-size:15px;
+}
+
+#top-photo {
+  width: 74%;
+  margin: 0px auto;
+  padding: 35px;
+}
+
+.box{
+		float:left;
+}
+.box1{
+		position:relative;
+		background-color:transparent;
+		box-shadow:3px 1px 9px -4px #000;
+		border-radius:10px;
+}
+.card_image{
+		width:100%;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		background-color: transparent;
+}
+.money{
+		position:absolute;
+		bottom:0px;
+		padding-left:30px;
+		color:#fff;
+}
+.box2{
+		background-color:#fff;
+		box-shadow:1px 1px 5px -3px;
+		position:relative;
+}
+.title{
+		position:absolute;
+		top:20px;
+		padding:0px 30px;
+		color:rgb(170, 170, 170);
+}
+#image-container{
+
+}
